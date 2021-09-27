@@ -23,19 +23,28 @@ function Welcome() {
   }
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <Text>alo</Text>
-      <TouchableOpacity onPress={onPressFirstScreen}>
-        <Text>ABRIR MODAL 1</Text>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'gray',
+      }}
+    >
+      <TouchableOpacity
+        style={{ backgroundColor: 'white', padding: 16 }}
+        onPress={onPressFirstScreen}
+      >
+        <Text>OPEN MODAL 1</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        style={{ marginTop: 100 }}
+        style={{ marginTop: 100, backgroundColor: 'white', padding: 16 }}
         onPress={onPressSecondScreen}
       >
-        <Text>ABRIR MODAL 2</Text>
+        <Text>OPEN MODAL 2</Text>
       </TouchableOpacity>
       <TouchableOpacity style={{ marginTop: 100 }} onPress={onPress}>
-        <Text>ABRIR MODAL CUSTOM</Text>
+        <Text>OPEN MODAL CUSTOM</Text>
       </TouchableOpacity>
     </SafeAreaView>
   )

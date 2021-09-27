@@ -7,8 +7,6 @@ const withStatus = (ModalComponent?: any) => (Component: any) => {
   return function WithStatus({ children }: any) {
     const { status, statusOptions, clearState } = useStatus()
 
-    console.log(status)
-
     if (status !== false) {
       return !!ModalComponent && status === STATUS.CUSTOM ? (
         <ModalComponent status={status} clearState={clearState} />

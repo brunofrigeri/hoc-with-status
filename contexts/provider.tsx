@@ -28,13 +28,13 @@ export default function StatusProvider({
       switch (statusScreen) {
         case 'screen_one':
           return {
-            title: 'É A TELA UM',
-            description: 'Essa é a descrição da tela UM',
+            title: 'TITLE OF SCREEN ONE',
+            description: 'This is the description of screen one',
           }
         case 'screen_two':
           return {
-            title: 'É A TELA DOIS',
-            description: 'Essa é a descrição da tela DOIS',
+            title: 'TITLE OF SCREEN TWO',
+            description: 'This is the description of screen two',
           }
 
         default:
